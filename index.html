@@ -62,4 +62,399 @@
       border:0; background:transparent; padding:8px 12px; border-radius:999px; cursor:pointer; color:var(--muted); font-weight:600;
     }
     .lang-switch button.active{ background:var(--accent); color:var(--accent-fg); }
-    h1{font-size:1
+    h1{font-size:1.8rem; margin:.6em 0 .2em}
+    h2{font-size:1.35rem; margin:1.6em 0 .4em}
+    h3{font-size:1.1rem; margin:1.2em 0 .3em}
+    p{margin:.6em 0}
+    ul{padding-left:1.2rem}
+    .card{
+      background:var(--card); border:1px solid var(--border);
+      padding:16px; border-radius:16px;
+    }
+    .meta{color:var(--muted); font-size:.95rem}
+    .notice{
+      border-left:4px solid var(--accent); padding:12px 14px; background: color-mix(in oklab, var(--card) 85%, transparent);
+      border-radius:8px; margin:1rem 0;
+    }
+    .toc{ display:flex; flex-wrap:wrap; gap:8px; margin:.6rem 0 1.2rem }
+    .toc a{
+      text-decoration:none; color:var(--fg); border:1px solid var(--border); padding:6px 10px; border-radius:999px; font-size:.92rem; background:var(--card)
+    }
+    a{ color:var(--accent); }
+    code{background: color-mix(in oklab, var(--card) 80%, transparent); padding:.1rem .35rem; border-radius:6px; color:var(--code)}
+    footer{ margin:3rem 0 1rem; color:var(--muted); font-size:.9rem }
+    .hidden{ display:none !important; }
+    /* print */
+    @media print{
+      header, .toc, .lang-switch{ display:none !important; }
+      body{ background:#fff; color:#000 }
+      a{text-decoration:underline; color:#000}
+      .card, .notice{ border-color:#ccc; background:#fff }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div>
+        <div class="brand">DieCast Garage</div>
+        <div class="tag">Gizlilik Politikası / Privacy Policy</div>
+      </div>
+      <div class="lang-switch" role="tablist" aria-label="Dil seçimi / Language">
+        <button id="btn-tr" class="active" role="tab" aria-selected="true" aria-controls="policy-tr">TR</button>
+        <button id="btn-en" role="tab" aria-selected="false" aria-controls="policy-en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Turkish -->
+    <article id="policy-tr" lang="tr">
+      <h1>Gizlilik Politikası</h1>
+      <p class="meta">Son güncelleme: <strong>[20.08.2025]</strong></p>
+
+      <div class="toc">
+        <a href="#tr-kimiz">Kimiz</a>
+        <a href="#tr-kapsam">Kapsam</a>
+        <a href="#tr-veriler">Topladığımız Veriler</a>
+        <a href="#tr-kullanim">Verileri Nasıl Kullanıyoruz</a>
+        <a href="#tr-dayanak">İşleme Dayanaklarımız</a>
+        <a href="#tr-paylasim">Paylaşımlar ve Alıcılar</a>
+        <a href="#tr-saklama">Veri Saklama</a>
+        <a href="#tr-aktarim">Uluslararası Aktarımlar</a>
+        <a href="#tr-guvenlik">Güvenlik</a>
+        <a href="#tr-haklar">Haklarınız</a>
+        <a href="#tr-izinler">İzinler ve Cihaz Erişimleri</a>
+        <a href="#tr-cerez">Çerezler</a>
+        <a href="#tr-ucuncu">Üçüncü Taraf Bağlantıları</a>
+        <a href="#tr-degisiklikler">Değişiklikler</a>
+        <a href="#tr-iletisim">İletişim</a>
+        <a href="#tr-datasafety">Google Play Veri Güvenliği</a>
+        <a href="#tr-notlar">Notlar</a>
+      </div>
+
+      <section id="tr-kimiz" class="card">
+        <h2>Kimiz</h2>
+        <p><strong>Uygulama adı:</strong> DieCast Garage</p>
+        <p><strong>Şirket/Yetkili:</strong> Harun Burak Çoban</p>
+        <p><strong>İletişim:</strong> <a href="mailto:info@hegionsoft.com">info@hegionsoft.com</a></p>
+      </section>
+
+      <section id="tr-kapsam">
+        <h2>Kapsam</h2>
+        <p>Bu politika, DieCast Garage mobil uygulamasını kullanan kişilerin kişisel verilerinin işlenmesini açıklar.</p>
+      </section>
+
+      <section id="tr-veriler">
+        <h2>Topladığımız Veriler</h2>
+        <ul>
+          <li><strong>Hesap bilgileri:</strong> e‑posta, ad/rumuz, profil görseli (Firebase Authentication).</li>
+          <li><strong>Kullanıcı içerikleri:</strong> Koleksiyon kayıtları (araç adı, seri, notlar vb.), yüklediğiniz fotoğraflar.</li>
+          <li><strong>Cihaz ve günlük verileri:</strong> IP (kısmi), cihaz modeli, işletim sistemi, uygulama sürümü, hata kayıtları, performans metrikleri.</li>
+          <li><strong>Kullanım verileri:</strong> Uygulama içi gezinti ve etkileşimler (Analytics etkinse).</li>
+          <li><strong>Destek iletişimi:</strong> Geri bildirim ve destek taleplerindeki bilgiler.</li>
+        </ul>
+        <p><em>Not:</em> Hassas kategorileri bilerek istemeyiz. Yanlışlıkla yüklenen içerikler kullanıcı sorumluluğundadır.</p>
+      </section>
+
+      <section id="tr-kullanim">
+        <h2>Verileri Nasıl Kullanıyoruz</h2>
+        <ul>
+          <li><strong>Hizmeti sağlamak:</strong> Kayıt/oturum açma, koleksiyon yönetimi, forum ve takas özellikleri.</li>
+          <li><strong>İyileştirme ve güvenlik:</strong> Hata tespiti, performans, dolandırıcılık/istismar önleme.</li>
+          <li><strong>Analitik:</strong> Özelliklerin kullanımını anlamak ve deneyimi geliştirmek (Analytics etkinse).</li>
+          <li><strong>Yasal yükümlülükler:</strong> Yükümlülüklerin yerine getirilmesi ve haklarımızın korunması.</li>
+        </ul>
+      </section>
+
+      <section id="tr-dayanak">
+        <h2>İşleme Dayanaklarımız (AB/EEA için)</h2>
+        <ul>
+          <li><strong>Sözleşmenin ifası:</strong> Uygulama özelliklerinin çalışması.</li>
+          <li><strong>Meşru menfaat:</strong> Güvenlik, hata giderme, ürün geliştirme.</li>
+          <li><strong>Rıza:</strong> Bildirim izinleri, cihaz erişimleri, analitik/çerezler (gerekliyse).</li>
+        </ul>
+      </section>
+
+      <section id="tr-paylasim">
+        <h2>Paylaşımlar ve Alıcılar</h2>
+        <ul>
+          <li><strong>Hizmet sağlayıcılar:</strong> Google Firebase (Authentication, Firestore/Realtime DB, Storage, Crashlytics/Analytics – etkinleştirdiyseniz). Google Play Faturalandırma (abonelik/ödeme işlemleri kullanılırsa). Bu sağlayıcılar verileri bizim adımıza işler ve sözleşmelerle yükümlüdür.</li>
+          <li><strong>Yasal gereklilikler:</strong> Kanuni taleplere yanıt verme.</li>
+          <li><strong>Birleşme/devralma:</strong> Mülkiyet değişirse bilgilendiririz.</li>
+        </ul>
+      </section>
+
+      <section id="tr-saklama">
+        <h2>Veri Saklama</h2>
+        <p>Hesabınız aktif kaldığı sürece veya amaç için gerekli makul süre boyunca. Yedekler ve loglar sınırlı süre tutulur. Hesabı silme talebinizde makul süre içinde kalıcı olarak siliyoruz (yasal yükümlülükler hariç).</p>
+      </section>
+
+      <section id="tr-aktarim">
+        <h2>Uluslararası Aktarımlar</h2>
+        <p>Firebase ve Google altyapıları yurtdışında olabilir. Uygun koruma tedbirleri (standart sözleşme maddeleri vb.) uygulanır.</p>
+      </section>
+
+      <section id="tr-guvenlik">
+        <h2>Güvenlik</h2>
+        <p>Şifrelenmiş aktarım (HTTPS), erişim kontrolleri ve en az ayrıcalık prensibi uygulanır. İnternette hiçbir yöntem %100 güvenli değildir.</p>
+      </section>
+
+      <section id="tr-haklar">
+        <h2>Haklarınız</h2>
+        <p>Yasal durumunuza göre:</p>
+        <ul>
+          <li>Erişim, düzeltme, silme, taşınabilirlik</li>
+          <li>İşlemeye itiraz/kişisel tercihleri yönetme</li>
+          <li>Rızayı geri çekme (geri çekmeden önceki işlemenin hukuka uygunluğunu etkilemez)</li>
+        </ul>
+        <p>Talepler için: <strong>[support@alanadiniz.com]</strong></p>
+      </section>
+
+      <section id="tr-izinler">
+        <h2>İzinler ve Cihaz Erişimleri</h2>
+        <ul>
+          <li><strong>Kamera/Galeri:</strong> Koleksiyon fotoğrafı yüklemek için (kullanıcı talebiyle).</li>
+          <li><strong>Depolama:</strong> Medya seçmek/yüklemek için.</li>
+          <li><strong>İnternet:</strong> Sunucu/servislere bağlanmak için.</li>
+          <li><strong>Bildirimler:</strong> Seçiminize bağlı olarak duyurular ve işlem güncellemeleri.</li>
+        </ul>
+        <p>İzinleri cihaz ayarlarından yönetebilirsiniz.</p>
+      </section>
+
+      <section id="tr-cerez">
+        <h2>Çerezler ve Benzeri Teknolojiler</h2>
+        <p>Uygulama içinde SDK temelli ölçüm kullanılabilir (Firebase Analytics etkinse). İsterseniz ayarlardan/cihaz ayarlarından analitik takibini sınırlandırabilirsiniz.</p>
+      </section>
+
+      <section id="tr-ucuncu">
+        <h2>Üçüncü Taraf Bağlantıları</h2>
+        <p>Topluluk bağlantıları/harici siteler olabilir. Bu sitelerin politikalarından sorumlu değiliz.</p>
+      </section>
+
+      <section id="tr-degisiklikler">
+        <h2>Değişiklikler</h2>
+        <p>Bu politikayı güncelleyebiliriz. “Son güncelleme” tarihini revize eder ve önemli değişikliklerde uygulama içi bildirim yaparız.</p>
+      </section>
+
+      <section id="tr-iletisim">
+        <h2>İletişim</h2>
+        <p>Sorular/başvurular: <a href="mailto:info@hegionsoft.com">info@hegionsoft.com</a></p>
+      </section>
+
+      <section id="tr-datasafety" class="card">
+        <h2>Google Play “Veri Güvenliği” Beyanı İçin Kısa Eşleştirme</h2>
+        <ul>
+          <li><strong>Kişisel bilgiler:</strong> e‑posta, profil (Kullanıcı tarafından sağlanan; hesabı yönetmek için; isteğe bağlı açıklayın).</li>
+          <li><strong>Uygulama etkinliği:</strong> Özellik kullanımı/etkileşim (ürün iyileştirme – Analytics etkinse).</li>
+          <li><strong>Uygulama bilgileri ve performans:</strong> Çökme, tanılama.</li>
+          <li><strong>Cihaz veya diğer kimlikler:</strong> Cihaz tanımlayıcıları (Analytics/Crashlytics kullanıyorsanız).</li>
+          <li><strong>Veri aktarımları:</strong> Şifreli aktarım, kullanıcı talebiyle silme desteklenir.</li>
+          <li><strong>Veriler üçüncü taraflarla paylaşım:</strong> Hizmet sağlayıcılar (Firebase).</li>
+        </ul>
+      </section>
+
+      <section id="tr-notlar" class="notice">
+        <h3>Notlar</h3>
+        <ul>
+          <li>Premium/abonelik altyapısını yeniden ekleyene kadar ödeme/abonelik bölümlerini politikada kapalı tutabilirsiniz.</li>
+          <li>Firebase Analytics’i gerçekten etkinleştirirseniz “Analitik” kısımlarını aktif bırakın; etkin değilse bu bölümü “devre dışı” olarak sadeleştirin.</li>
+        </ul>
+      </section>
+    </article>
+
+    <!-- English -->
+    <article id="policy-en" lang="en" class="hidden" aria-hidden="true">
+      <h1>Privacy Policy</h1>
+      <p class="meta">Last updated: <strong>[08.20.2025]</strong></p>
+
+      <div class="toc">
+        <a href="#en-who">Who we are</a>
+        <a href="#en-scope">Scope</a>
+        <a href="#en-data">Data we collect</a>
+        <a href="#en-use">How we use data</a>
+        <a href="#en-legal">Legal bases</a>
+        <a href="#en-sharing">Sharing and recipients</a>
+        <a href="#en-retention">Data retention</a>
+        <a href="#en-transfers">International transfers</a>
+        <a href="#en-security">Security</a>
+        <a href="#en-rights">Your rights</a>
+        <a href="#en-permissions">Permissions & device access</a>
+        <a href="#en-cookies">Cookies</a>
+        <a href="#en-links">Third‑party links</a>
+        <a href="#en-changes">Changes</a>
+        <a href="#en-contact">Contact</a>
+        <a href="#en-datasafety">Google Play Data safety</a>
+        <a href="#en-notes">Notes</a>
+      </div>
+
+      <section id="en-who" class="card">
+        <h2>Who we are</h2>
+        <p><strong>App:</strong> DieCast Garage</p>
+        <p><strong>Company/Owner:</strong> Harun Burak Çoban</p>
+        <p><strong>Contact:</strong> <a href="mailto:info@hegionsoft.com">info@hegionsoft.com</a></p>
+      </section>
+
+      <section id="en-scope">
+        <h2>Scope</h2>
+        <p>This policy explains how DieCast Garage collects and processes personal data of people who use the mobile app.</p>
+      </section>
+
+      <section id="en-data">
+        <h2>Data we collect</h2>
+        <ul>
+          <li><strong>Account data:</strong> email, name/nickname, profile image (via Firebase Authentication).</li>
+          <li><strong>User content:</strong> collection records (car name, series, notes, etc.) and photos you upload.</li>
+          <li><strong>Device and logs:</strong> IP (partial), device model, OS, app version, crash/performance logs.</li>
+          <li><strong>Usage data:</strong> in‑app interactions and navigation (if Analytics is enabled).</li>
+          <li><strong>Support:</strong> information you share in support requests.</li>
+        </ul>
+        <p><em>Note:</em> We do not intentionally collect sensitive categories. Content you upload is your responsibility.</p>
+      </section>
+
+      <section id="en-use">
+        <h2>How we use data</h2>
+        <ul>
+          <li><strong>Provide the service:</strong> sign‑up/login, collection management, forum and trading features.</li>
+          <li><strong>Improve and secure:</strong> debugging, performance, fraud/abuse prevention.</li>
+          <li><strong>Analytics:</strong> understand feature usage and improve experience (if enabled).</li>
+          <li><strong>Legal compliance and protection</strong> of our rights.</li>
+        </ul>
+      </section>
+
+      <section id="en-legal">
+        <h2>Legal bases (EU/EEA/UK)</h2>
+        <ul>
+          <li><strong>Contract:</strong> to operate app features.</li>
+          <li><strong>Legitimate interests:</strong> security, debugging, product improvement.</li>
+          <li><strong>Consent:</strong> notifications, device permissions, analytics where required.</li>
+        </ul>
+      </section>
+
+      <section id="en-sharing">
+        <h2>Sharing and recipients</h2>
+        <ul>
+          <li><strong>Service providers:</strong> Google Firebase (Authentication, Database/Storage, Analytics/Crashlytics if enabled). Google Play Billing (only if in‑app purchases/subscriptions are enabled). These providers process data on our behalf under contractual safeguards.</li>
+          <li><strong>Legal requests:</strong> when required by law.</li>
+          <li><strong>Business transfers:</strong> merger/acquisition; we will notify you of changes.</li>
+        </ul>
+      </section>
+
+      <section id="en-retention">
+        <h2>Data retention</h2>
+        <p>For as long as your account is active or as needed for the purposes above. Backups/logs are kept for limited periods. Upon account deletion request, we erase data within a reasonable time unless retention is required by law.</p>
+      </section>
+
+      <section id="en-transfers">
+        <h2>International transfers</h2>
+        <p>Firebase/Google infrastructure may be outside your country. Appropriate safeguards (e.g., Standard Contractual Clauses) are applied.</p>
+      </section>
+
+      <section id="en-security">
+        <h2>Security</h2>
+        <p>We use encrypted transport (HTTPS), access controls, and least‑privilege practices. No method is 100% secure.</p>
+      </section>
+
+      <section id="en-rights">
+        <h2>Your rights</h2>
+        <p>Depending on your location:</p>
+        <ul>
+          <li>access, correction, deletion, portability</li>
+          <li>objection and preference management</li>
+          <li>withdraw consent (does not affect prior lawful processing)</li>
+        </ul>
+        <p>Requests: <strong>[support@yourdomain.com]</strong></p>
+      </section>
+
+      <section id="en-permissions">
+        <h2>Permissions and device access</h2>
+        <ul>
+          <li><strong>Camera/Gallery:</strong> to upload collection photos (user‑initiated).</li>
+          <li><strong>Storage/Photos:</strong> to select and upload media.</li>
+          <li><strong>Internet:</strong> to connect to backend/services.</li>
+          <li><strong>Notifications:</strong> optional updates and alerts.</li>
+        </ul>
+        <p>Permissions can be managed in device settings.</p>
+      </section>
+
+      <section id="en-cookies">
+        <h2>Cookies and similar technologies</h2>
+        <p>The app may use SDK‑based measurement (e.g., Firebase Analytics if enabled). You can limit analytics in app/device settings where available.</p>
+      </section>
+
+      <section id="en-links">
+        <h2>Third‑party links</h2>
+        <p>Community links or external sites may appear. We are not responsible for their policies.</p>
+      </section>
+
+      <section id="en-changes">
+        <h2>Changes</h2>
+        <p>We may update this policy. We will revise the “Last updated” date and provide in‑app notice of material changes.</p>
+      </section>
+
+      <section id="en-contact">
+        <h2>Contact</h2>
+        <p>Questions/requests: <a href="mailto:info@hegionsoft.com">info@hegionsoft.com</a></p>
+      </section>
+
+      <section id="en-datasafety" class="card">
+        <h2>Google Play “Data safety” quick mapping</h2>
+        <ul>
+          <li><strong>Personal info:</strong> email, profile (provided by user; account management).</li>
+          <li><strong>App activity:</strong> interactions/usage (product improvement; only if Analytics is enabled).</li>
+          <li><strong>App info & performance:</strong> crashes, diagnostics.</li>
+          <li><strong>Device or other IDs:</strong> device identifiers (if Analytics/Crashlytics is enabled).</li>
+          <li><strong>Data sharing:</strong> with service providers (Firebase/Google) acting on our behalf.</li>
+          <li><strong>Security:</strong> data in transit is encrypted; user‑initiated deletion supported.</li>
+        </ul>
+      </section>
+
+      <section id="en-notes" class="notice">
+        <h3>Notes</h3>
+        <ul>
+          <li>Your current code shows an AnalyticsService stub for Firebase Analytics. If you keep Analytics disabled, state that analytics collection is off; if you enable it, keep the sections above as written.</li>
+          <li>Update emails, company name, age threshold, and enabled services before publishing.</li>
+        </ul>
+      </section>
+    </article>
+
+    <footer>
+      © <span id="year"></span> DieCast Garage — Bu sayfa bilgilendirme amaçlıdır.
+    </footer>
+  </main>
+
+  <script>
+    (function(){
+      const btnTR = document.getElementById('btn-tr');
+      const btnEN = document.getElementById('btn-en');
+      const tr = document.getElementById('policy-tr');
+      const en = document.getElementById('policy-en');
+
+      function setLang(lang){
+        const isTR = lang === 'tr';
+        tr.classList.toggle('hidden', !isTR);
+        tr.setAttribute('aria-hidden', String(!isTR));
+        en.classList.toggle('hidden', isTR);
+        en.setAttribute('aria-hidden', String(isTR));
+        btnTR.classList.toggle('active', isTR);
+        btnTR.setAttribute('aria-selected', String(isTR));
+        btnEN.classList.toggle('active', !isTR);
+        btnEN.setAttribute('aria-selected', String(!isTR));
+        document.documentElement.lang = isTR ? 'tr' : 'en';
+        try{ localStorage.setItem('policy_lang', lang); }catch(e){}
+      }
+
+      btnTR.addEventListener('click', () => setLang('tr'));
+      btnEN.addEventListener('click', () => setLang('en'));
+
+      // restore pref
+      let pref = 'tr';
+      try{ pref = localStorage.getItem('policy_lang') || 'tr'; }catch(e){}
+      setLang(pref);
+
+      // footer year
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
